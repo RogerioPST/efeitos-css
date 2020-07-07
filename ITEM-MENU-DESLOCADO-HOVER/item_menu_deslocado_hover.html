@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	body {
+        background:teal;
+        font-family: Arial, Helvetica, sans-serif;
+	}
+	ul{
+		padding: 20px;
+	}
+	ul li{
+		text-align: center;
+		background: #006464;
+		list-style: none;
+		padding: 10px;
+		transition: all 0.5s;
+		border: 0px solid teal;
+	}
+	ul li a{
+		color: white;
+		text-decoration: none;
+		font-size: 18px;
+	}
+	ul li::before{
+		content: '';
+		color: #00b3b3;
+		transition: all 1.5s;
+		left: 0;
+	}
+	ul li:hover{
+		border-left: 40px solid teal;
+		background: #00b3b3;
+	}
+	ul li:hover a{
+		font-weight: 900;
+		font-size: 25px;
+	}
+	ul li:hover::before{
+		content: '_>';
+		color: white;
+	}
+	
+      
+      
+</style>
+<body>
+	<ul>
+		<li><a href="#">Teste 1</a></li>
+		<li><a href="#">Teste 1</a></li>
+		<li><a href="#">Teste 1</a></li>
+		<li><a href="#">Teste 1</a></li>
+	</ul>
+</body>
+</html>

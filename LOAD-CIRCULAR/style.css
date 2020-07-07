@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;        
+    background: #00796b;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.load{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spin{
+    background: #00000020;
+    height: 100px;
+    width: 100px;
+    border-radius: 50vh;
+    /* 
+    a ordem importa; primeiro, precisa aparecer o border abaixo
+
+    */    
+    border: 5px solid #00000000;
+    /* aqui temos o efeito de algo girando*/
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    animation: loading 2s linear infinite;
+}
+
+.loading   {
+    position: absolute;
+    color: white;
+}
+
+@keyframes loading{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.span{
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid white;
+    
+}

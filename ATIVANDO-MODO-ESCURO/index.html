@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            margin: 0;
+        }
+        .conteudo{
+            height: 100%;
+            padding: 10px;
+            color: var(--corTexto);
+            background-color: var(--corFundo);
+            transition: 0.5s;
+        }
+        #MudarTema{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            -webkit-appearance: none;
+            outline: none;
+        }
+        #MudarTema::before{
+            content: attr(title);
+            font-size: 20px;
+        }
+
+        #MudarTema:checked + .conteudo{
+            --corTexto: white;
+            --corFundo: black;
+        }
+        #MudarTema:checked::before{
+            content: '☀️';
+        }
+
+    </style>
+</head>
+<body>
+    <!-- .conteudo>p*10{Texto padrão $} -->
+    <input type="checkbox" title="🌙" id="MudarTema" />
+    <div class="conteudo">
+        <p>Texto padrão 1</p>
+        <p>Texto padrão 2</p>
+        <p>Texto padrão 3</p>
+        <p>Texto padrão 4</p>
+        <p>Texto padrão 5</p>
+        <p>Texto padrão 6</p>
+        <p>Texto padrão 7</p>
+        <p>Texto padrão 8</p>
+        <p>Texto padrão 9</p>
+        <p>Texto padrão 10</p>
+    </div>
+
+    
+</body>
+</html>

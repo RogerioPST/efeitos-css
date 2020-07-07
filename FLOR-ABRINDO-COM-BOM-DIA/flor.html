@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flor{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            border-radius: 50vh;
+            background-color: yellowgreen;
+        }
+        .petala{
+            position: absolute;
+            height: 200px;
+            width: 100px;
+            z-index: -1;
+            border-radius: 50px;
+            transition: all 0.5s ease-in;
+            text-align: center;
+        }
+        .petala span{
+            line-height: 150px;
+            color: white;
+            font-family: cursive;
+            font-weight: 900;
+            top: 5px;
+        }
+        .petala:nth-child(even){
+            background-color: purple;
+            z-index: -2;
+        }
+        .petala:nth-child(odd){
+            background-color: violet;
+        }
+        .petala:nth-child(1){
+            transform: rotate(0deg);
+            bottom: -50px;
+            left: 0px;
+        }
+        .petala:nth-child(2){
+            transform: rotate(45deg);
+            bottom: -50px;
+            left: 0px;
+        }
+        .petala:nth-child(3){
+            transform: rotate(90deg);
+            bottom: -50px;
+            left: 0px;
+        }
+        .petala:nth-child(4){
+            transform: rotate(135deg);
+            bottom: -50px;
+            left: 0px;
+        }
+        .petala:nth-child(5){
+            transform: rotate(180deg);
+            bottom: -50px;
+            left: 0px;
+        }
+        .petala:nth-child(6){
+            transform: rotate(225deg);
+            bottom: -50px;
+            left: 0px;
+        }
+        .petala:nth-child(7){
+            transform: rotate(270deg);
+            bottom: -50px;
+            left: 0px;
+        }
+        .petala:nth-child(8){
+            transform: rotate(315deg);
+            bottom: -50px;
+            left: 0px;
+        }
+        .flor:hover .petala:nth-child(8){
+            transform: rotate(360deg);
+            bottom: 0px;
+            left: 0px;
+        }
+        .flor:hover .petala:nth-child(1){
+            transform: rotate(45deg);
+            left: 50px;
+            bottom: 0px;
+        }
+        .flor:hover .petala:nth-child(2){
+            transform: rotate(90deg);
+            left: 50px;
+        }
+        .flor:hover .petala:nth-child(3){
+            transform: rotate(135deg);
+            bottom: -100px;
+            left: 50px;
+        }
+        .flor:hover .petala:nth-child(4){
+            transform: rotate(180deg);
+            bottom: -100px;
+        }
+        .flor:hover .petala:nth-child(5){
+            transform: rotate(225deg);
+            bottom: -100px;
+            left: -50px;
+        }
+        .flor:hover .petala:nth-child(6){
+            transform: rotate(270deg);
+            left: -50px;
+            bottom: -50px;
+        }
+        .flor:hover .petala:nth-child(7){
+            transform: rotate(315deg);
+            left: -50px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flor">
+        <div class="petala"><span>Tenha</span></div>
+
+        <div class="petala"><span>Tenha</span></div>
+        
+        <div class="petala"><span>Um</span></div>
+        
+        <div class="petala"><span>Um</span></div>
+        
+        <div class="petala"><span>Bom</span></div>
+        
+        <div class="petala"><span>Bom</span></div>
+        
+        <div class="petala"><span>Dia!</span></div>
+        
+        <div class="petala"><span>Dia!</span></div>
+
+        
+    </div>
+    
+</body>
+</html>

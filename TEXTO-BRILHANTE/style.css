@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;    
+    background: black;
+}
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #FFF, #000);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    -webkit-text-fill-color: transparent;
+    /* quero q o background seja aplicado apenas ao texto*/
+    -webkit-background-clip: text;
+    animation: anim 5s linear infinite;
+}
+
+@keyframes anim{
+    0%{
+        background-position: -500%;
+    }
+    100%{
+        background-position: 500%;
+    }
+}
+    

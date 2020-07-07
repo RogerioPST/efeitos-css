@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #616161;
+}
+.droplet{
+    background-color: #0288d1;
+    height: 150px;
+    width: 150px;
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(45deg);
+    /* 
+    1 param - deslocamento horizontal
+    2 param = deslocamento vertical
+    3 param - blur (borrado)
+    4 param - spread (radio de propagação) -> 
+        positivo - aumenta a sombra
+        negativo - diminui
+    5 param - inset - altera a sombre de externa para interna */
+    box-shadow: -25px 10px 5px -10px #03a9f4 inset;
+}
