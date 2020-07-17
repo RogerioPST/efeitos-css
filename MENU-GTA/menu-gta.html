@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+      body {
+        font-family: "Teko", sans-serif;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        position: absolute;
+        top: 0px;
+        left: 90px;
+        color: #a6c9ea;
+        font-size: 90px;
+        font-family: 'UnifrakturCook', cursive;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+      }
+      ul li {
+        cursor: default;
+        list-style: none;
+        color: #495a68;
+        font-size: 60px;
+        line-height: 60px;
+        transform: scale(1, 0.6);
+        position: relative;
+      }
+      ul li:hover {
+        color: #a6c9ea;
+      }
+      ul li:hover::before {
+        position: absolute;
+        left: -90px;
+        display: inline-block;
+        content: " ";
+        background-image: url("icone-1.svg");
+        background-size: 90px;
+        height: 90px;
+        width: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PAUSE MENU</h1>
+    <img src="bg.png" alt="" />
+    <ul>
+      <li>RESUME</li>
+      <li>START NEW GAME</li>
+      <li>MAP</li>
+      <li>STATS</li>
+      <li>BRIEF</li>
+      <li>OPTIONS</li>
+      <li>QUIT GAME</li>
+    </ul>
+  </body>
+</html>
